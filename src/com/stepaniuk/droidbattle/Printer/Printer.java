@@ -2,11 +2,18 @@ package com.stepaniuk.droidbattle.Printer;
 
 import java.io.*;
 
+/**
+ * Клас,що реалізує зчитування у файл,та вивід файлу
+ */
 public class Printer {
 
     private static FileWriter myWriter;
     private static boolean writeToFile = false;
 
+    /**
+     * Конструктор з параметром
+     * @param fileName ім'я файлу
+     */
     public Printer(String fileName) {
         try {
             myWriter = new FileWriter(fileName);
@@ -15,6 +22,10 @@ public class Printer {
         }
     }
 
+    /**
+     * Метод для запису строки у файл з виводом її на екран
+     * @param st строка яку потрібно вивести на екран та записати у файл
+     */
     public static void print(String st) {
         System.out.println(st);
         if (writeToFile) {
@@ -26,6 +37,10 @@ public class Printer {
         }
     }
 
+    /**
+     * Метод для запису строки без виводу на екран
+     * @param value строка яку потрібно записати у файл
+     */
     public static void printInputValue(String value) {
         if (writeToFile) {
             try {
@@ -36,6 +51,10 @@ public class Printer {
         }
     }
 
+    /**
+     * Метод для зчитування інформації з файлу
+     * @param fileName назва файлу
+     */
     public static void readFromFile(String fileName) {
 
         try {
@@ -54,13 +73,25 @@ public class Printer {
         }
     }
 
+    /**
+     * Сеттер для поля writeToFile
+     * @param writeToFile поле яке визначає чи йде запис у файл
+     */
     public static void setWriteToFile(boolean writeToFile) {
         Printer.writeToFile = writeToFile;
     }
 
+    /**
+     * Геттер для поля writeToFile
+     * @return writeToFile
+     */
     public static boolean getWriteToFile() {
         return writeToFile;
     }
+
+    /**
+     * Метод для закриття FileWriter'a
+     */
     public void closePrinter() {
         try {
             myWriter.close();

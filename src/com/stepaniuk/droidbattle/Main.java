@@ -7,9 +7,17 @@ import com.stepaniuk.droidbattle.Team.Team;
 
 import java.util.Scanner;
 
+/**
+ * Main клас для створення екземплярів класів
+ * @author Volodymyr Stepaniuk
+ */
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * main метод
+     * @param args масив параметрів командного рядка
+     */
     public static void main(String[] args) {
         String value;
         do {
@@ -37,6 +45,10 @@ public class Main {
 
     }
 
+    /**
+     * Метод,що викликає метод start Main класу
+     * @param size розмір команд дроїдів
+     */
     private static void startBattle(int size) {
         Printer pr = null;
         System.out.println("Record the fight to a file? Yes/No: ");
@@ -51,6 +63,11 @@ public class Main {
             pr.closePrinter();
         }
     }
+
+    /**
+     * Метод для формування команд та запуску битви між ними
+     * @param size розмір команд дроїдів
+     */
     private static void start(int size){
         Printer.print("\nFormation of the first team");
         Team myTeam = new Team(size);

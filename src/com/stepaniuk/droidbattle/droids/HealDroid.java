@@ -1,16 +1,25 @@
 package com.stepaniuk.droidbattle.droids;
 
 import java.util.Random;
-
+/**
+ * Клас,що представляє тип Heal дроїда
+ * @author Volodymyr Stepaniuk
+ */
 public class HealDroid extends Droid{
-    private int chanceToHeal;
+    private final int chanceToHeal;
     private final int healHp;
+
+    /**Конструктор без параметрів,що визиває конструктор у батьківського класу*/
     public HealDroid(){
         super("Heal Droid",100,15);
         this.chanceToHeal = 25;
         this.healHp = 10;
     }
-
+    /**
+     * Метод для отримання урону дроїдом
+     * @param damage урон,що наніс ворожий дроїд
+     * @return false or true
+     */
     @Override
     public boolean getHit(int damage) {
         Random random = new Random();
@@ -26,11 +35,4 @@ public class HealDroid extends Droid{
         return true;
     }
 
-    public int getChanceToHeal() {
-        return chanceToHeal;
-    }
-
-    public void setChanceToHeal(int chanceToHeal) {
-        this.chanceToHeal = chanceToHeal;
-    }
 }

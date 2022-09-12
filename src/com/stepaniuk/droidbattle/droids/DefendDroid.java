@@ -1,22 +1,23 @@
 package com.stepaniuk.droidbattle.droids;
 
 import java.util.Random;
-
+/**
+ * Клас,що представляє тип Defend дроїда
+ * @author Volodymyr Stepaniuk
+ */
 public class DefendDroid extends Droid{
-    protected int chanceToAbsorbe;
+    protected final int chanceToAbsorbe;
+    /**Конструктор без параметрів,що визиває конструктор у батьківського класу*/
     public DefendDroid() {
         super("Defend Droid", 150, 10);
         this.chanceToAbsorbe = 25;
     }
 
-    public int getChanceToAbsorbe() {
-        return chanceToAbsorbe;
-    }
-
-    public void setChanceToAbsorbe(int chanceToAbsorbe) {
-        this.chanceToAbsorbe = chanceToAbsorbe;
-    }
-
+    /**
+     * Метод для отримання урону дроїдом
+     * @param damage урон,що наніс ворожий дроїд
+     * @return false or true
+     */
     @Override
     public boolean getHit(int damage) {
         Random random = new Random();

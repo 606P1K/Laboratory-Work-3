@@ -1,53 +1,59 @@
 package com.stepaniuk.droidbattle.droids;
 
 import java.util.Random;
-
+/**
+ * Клас,що представляє тип Droid'а
+ * (Батьківський клас для усіх типів дроїдів)
+ * @author Volodymyr Stepaniuk
+ */
 public class Droid {
     protected String name;
     protected int health;
     protected int damage;
 
+    /**
+     * Конструктор з параметрами
+     * @param name ім'я дроїда
+     * @param health кількість HP дроїда
+     * @param damage максимальний урон,що може нанести дроїд
+     */
     public Droid(String name, int health, int damage) {
         this.name = name;
         this.health = health;
         this.damage = damage;
     }
 
+    /**
+     * Геттер для поля name
+     * @return name
+     */
     public String getName() {
         return name;
     }
 
-    public boolean isAlive(){
-        if (health>0) return true;
-        return false;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    /**
+     * Геттер для поля health
+     * @return health
+     */
     public int getHealth() {
         return health;
     }
 
-    public void setHealth(int health) {
-        this.health = health;
-    }
-
-    public int getDamage() {
-        return damage;
-    }
-
-    public void setDamage(int damage) {
-        this.damage = damage;
-    }
-
+    /**
+     * Метод для атаки ворожого дроїда.Повертає урон нанесений дроїдом.
+     * @return real damage
+     */
     public int attack()
     {
         Random random = new Random();
         return random.nextInt(damage-1)+1;
     }
 
+    /**
+     * Метод для отримання урону дроїдом
+     * @param damage урон,що наніс ворожий дроїд
+     * @return false or true
+     */
     public boolean getHit(int damage)
     {
         this.health -= damage;
@@ -58,6 +64,10 @@ public class Droid {
         return true;
     }
 
+    /**
+     * Перевантажений метод toString
+     * @return String
+     */
     @Override
     public String toString() {
         return name + "\n(HP: " + health + " Maximal Damage: " + damage+")";
