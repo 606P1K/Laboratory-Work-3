@@ -1,0 +1,121 @@
+
+Formation of the first team
+Choose droid №1
+1. Heal Droid
+2. Attack Droid
+3. Defend Droid
+1
+
+Formation of the second team
+Choose droid №1
+1. Heal Droid
+2. Attack Droid
+3. Defend Droid
+2
+
+----------------------------Round №1----------------------------
+First team turn:
+Heal Droid give 13 damage to Attack Droid
+
+Second team turn:
+Attack Droid give 10 damage to Heal Droid
+
+First team:
+Heal Droid
+(HP: 90 Maximal Damage: 15)
+
+Second team:
+Attack Droid
+(HP: 57 Maximal Damage: 20)
+
+----------------------------Round №2----------------------------
+First team turn:
+Heal Droid give 8 damage to Attack Droid
+
+Second team turn:
+Attack Droid give 25 damage to Heal Droid
+
+First team:
+Heal Droid
+(HP: 65 Maximal Damage: 15)
+
+Second team:
+Attack Droid
+(HP: 49 Maximal Damage: 20)
+
+----------------------------Round №3----------------------------
+First team turn:
+Heal Droid give 5 damage to Attack Droid
+
+Second team turn:
+Attack Droid give 4 damage to Heal Droid
+
+First team:
+Heal Droid
+(HP: 61 Maximal Damage: 15)
+
+Second team:
+Attack Droid
+(HP: 44 Maximal Damage: 20)
+
+----------------------------Round №4----------------------------
+First team turn:
+Heal Droid give 14 damage to Attack Droid
+
+Second team turn:
+Attack Droid give 25 damage to Heal Droid
+
+First team:
+Heal Droid
+(HP: 46 Maximal Damage: 15)
+
+Second team:
+Attack Droid
+(HP: 30 Maximal Damage: 20)
+
+----------------------------Round №5----------------------------
+First team turn:
+Heal Droid give 14 damage to Attack Droid
+
+Second team turn:
+Attack Droid give 25 damage to Heal Droid
+
+First team:
+Heal Droid
+(HP: 21 Maximal Damage: 15)
+
+Second team:
+Attack Droid
+(HP: 16 Maximal Damage: 20)
+
+----------------------------Round №6----------------------------
+First team turn:
+Heal Droid give 4 damage to Attack Droid
+
+Second team turn:
+Attack Droid give 7 damage to Heal Droid
+
+First team:
+Heal Droid
+(HP: 14 Maximal Damage: 15)
+
+Second team:
+Attack Droid
+(HP: 12 Maximal Damage: 20)
+
+----------------------------Round №7----------------------------
+First team turn:
+Heal Droid give 5 damage to Attack Droid
+
+Second team turn:
+Attack Droid give 25 damage to Heal Droid
+
+First team:
+Empty
+
+Second team:
+Attack Droid
+(HP: 7 Maximal Damage: 20)
+
+Second team win
+
